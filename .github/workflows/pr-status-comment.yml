@@ -1,4 +1,4 @@
-name: Comment PR Changeset Status
+name: Comment changeset status in PRs
 
 on:
   pull_request_target:
@@ -9,7 +9,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  comment-pr-changeset:
+  pr-status-comment:
     runs-on: ubuntu-slim
     permissions:
       contents: read # to check out files in the repo
@@ -28,4 +28,4 @@ jobs:
           SHA: ${{ github.event.pull_request.head.sha }}
 
       - name: Comment changeset status
-        uses: changesets/action/comment-pr-changeset@comment-pr-changeset-dist
+        uses: changesets/action/pr-status-comment@comment-pr-changeset-dist
