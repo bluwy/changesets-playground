@@ -6,7 +6,7 @@
   "linked": [],
   "access": "restricted",
   "format": "auto",
-  "baseBranch": "main",
+  "baseBranch": "master",
   "updateInternalDependencies": "patch",
   "ignore": []
 }
