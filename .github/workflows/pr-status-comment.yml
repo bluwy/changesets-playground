@@ -28,4 +28,4 @@ jobs:
           SHA: ${{ github.event.pull_request.head.sha }}
 
       - name: Comment changeset status
-        uses: changesets/action/pr-status-comment@comment-pr-changeset-dist
+        uses: changesets/action/pr-status-comment@pr-status-comment-detached-worktree-dist
